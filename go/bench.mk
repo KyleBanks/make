@@ -1,4 +1,4 @@
-# Runs the standard Go benchmark test on the current package.
+# Runs the standard Go benchmark test on all packages.
 bench:
-	@go test -bench=.
+	@go list ./... | grep -v vendor/ | xargs go test -bench=.
 .PHONY: bench
