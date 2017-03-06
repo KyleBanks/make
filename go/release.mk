@@ -1,5 +1,3 @@
-include github.com/KyleBanks/make/go/sanity
-
 ifndef RELEASE_PKG
         RELEASE_PKG = .
 endif
