@@ -10,5 +10,5 @@ sanity:
 	@go list ./... | grep -v vendor/ | xargs golint
 
 	@echo "---------------- FMT ----------------"
-	@go list ./... | grep -v vendor/ | xargs go fmt
+	@go list ./... | grep -v vendor/ | xargs go fmt -s
 .PHONY: sanity
